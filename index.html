@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>playground</title>
+
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div>
+          <button id="file" name="file">choose file</button>
+          <label for="file" id="file-path">file path</label>
+        </div>
+        <div class="nd">
+          <button id="folder" name="folder">choose folder</button>
+          <label for="folder" id="folder-path">folder path</label>
+        </div>
+        <input id="search" type="text" class="input" spellcheck="false"
+          autocomplete="off" aria-autocomplete="none"
+          placeholder="search problem">
+      </header>
+      <main id="main">
+        <ul id="problem-list">
+        </ul>
+        <div id="pagination"></div>
+      </main>
+      <footer>
+        <button id="try">try</button>
+        <button id="test">test</button>
+      </footer>
+    </div>
+    <script type="module" src="/src/renderer.ts"></script>
+  </body>
+</html>
